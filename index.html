@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ishuduwal website</title>
+    <title>ishuduwal</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,9 +19,10 @@
     <nav>
         <span><i class="fa-solid fa-code"></i>ishu duwal</span>
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#home" class="nav-link">home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">about</a></li>
-                <li class="nav-item"><a href="#project" class="nav-link">projects</a></li>
+                <li class="nav-item"><a href="#home" class="nav-link" onclick="showPage('page-one')">home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link" onclick="showPage('page-one')">about</a></li>
+                <li class="nav-item"><a href="#project" class="nav-link" onclick="showPage('page-two')">projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link" onclick="showPage('page-one')">contact</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -29,6 +30,9 @@
                 <span class="bar"></span>
             </div>
     </nav>
+    <!--page-section-divides-->
+    <div id="pages">
+        <div id="page-one" class="page active">
     <!--home-starts-->
     <div class="home" id="home">
         <div class="shapes">
@@ -97,6 +101,13 @@
     <div class="footer">
         <p>© Copyright 2023</p>
         <p>Made by Ishu Duwal</p>
+    </div>
+    </div>
+        <div id="page-two" class="page">
+            <div class="project" id="project">
+                <p>Projects will be uploaded soon!!!</p>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

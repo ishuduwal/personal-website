@@ -15,3 +15,12 @@ const time = document.getElementById("digital-clock");
 setInterval(() =>{
     const d = new Date();
     time.innerHTML = d.toLocaleTimeString();})
+/*page-function*/
+function showPage(pageId){
+    const pages = document.querySelectorAll('.page');
+    for (let i = 0; i < pages.length; i++){
+        pages[i].classList.remove('active');
+    }
+    const page = document.getElementById(pageId);
+    page.classList.add('active');
+}
