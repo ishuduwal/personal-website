@@ -201,6 +201,11 @@ ul{
     line-height: 1.2rem;
     animation: opacity 3s ease-in-out;
 }
+.home-text-container > span{
+    font-size: 2rem;
+    font-weight: bold;
+    animation: opacity 4s ease-in-out;
+}
 #nepal-flag{
     height: 1rem;
     object-fit: cover;
@@ -209,7 +214,7 @@ ul{
 .download-cv{
     display: flex;
     justify-content: center;
-    animation: opacity 4s ease-in-out;
+    animation: opacity 5s ease-in-out;
 }
 #download-cv, #link-contact{
     display: flex;
