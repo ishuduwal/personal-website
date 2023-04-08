@@ -79,15 +79,15 @@ ul{
    .nav-socials{
     display: flex;
     justify-content: center;
-    gap:2.3rem;
+    gap:2.1rem;
     margin-top: 2rem;
 }
 .nav-socials > a{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     background-color: #fff;
     box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.7);
-    height: 2.8rem;
-    width: 2.8rem;
+    height: 2.6rem;
+    width: 2.6rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
