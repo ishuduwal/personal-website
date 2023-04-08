@@ -68,11 +68,46 @@ ul{
     margin: 0.313rem auto;
     background-color:#000;
 }
+.nav-socials{
+    display: none;
+}
 /*nav-responsive*/
 @media (max-width:700px){
    .hamburger{
     display: block;
    }
+   .nav-socials{
+    display: flex;
+    justify-content: center;
+    gap:2.3rem;
+    margin-top: 2rem;
+}
+.nav-socials > a{
+    font-size: 1.8rem;
+    background-color: #fff;
+    box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.7);
+    height: 2.8rem;
+    width: 2.8rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+#nav-twitter{
+    color: #1d9bf0;
+}
+#nav-github{
+    color:#171515;
+}
+#nav-facebook{
+    color: #0f92f3;
+}
+#nav-instagram{
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
    .hamburger.active .bar:nth-child(2){
     opacity: 0;
    }
