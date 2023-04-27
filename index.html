@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/68ca6c3423.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -21,6 +21,7 @@
             <ul class="nav-menu">
                 <li class="nav-item"><a href="#home" class="nav-link" onclick="showPage('page-one')">home</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link" onclick="showPage('page-one')">about</a></li>
+                <li class="nav-item"><a href="#skill" class="nav-link" onclick="showPage('page-one')">skills</a></li>
                 <li class="nav-item"><a href="#project" class="nav-link" onclick="showPage('page-two')">projects</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link" onclick="showPage('page-one')">contact</a></li>
                 <div class="nav-socials">
@@ -70,15 +71,52 @@
                     <a href="#contact" id="link-contact">Contact</a>
                 </div>
             </div>
-            <div class="about-container-skills">
-                <p>skills:</p>
-                <div class="skill-icons">
-                    <div><i class="fa-brands fa-html5" id="skill"></i><p>html</p></div>
-                    <div><i class="fa-brands fa-js" id="skill"></i><p>javascript</p></div>
-                    <div><i class="fa-brands fa-css3-alt" id="skill"></i><p>css</p></div>
-                    <div><i class="fa-brands fa-java" id="skill"></i><p>java</p></div>
-                    <div><i class="fa-brands fa-python" id="skill"></i><p>python</p></div>
-                    <div><i class="fa-brands fa-react" id="skill"></i><p>react</p></div>
+            <div class="about-image-container">
+                <img src="ishu.jpg" alt="mine" id="about-image">
+            </div>
+        </div>
+    </div>
+    <!--skill-section-starts-->
+    <div class="skill" id="skill">
+        <div class="skill-container">
+            <h2>Skills</h2>
+            <div class="skills3">
+                <div class="skills web">
+                    <div class="web-logo">
+                        <i class="fa-solid fa-code"></i>
+                        <p>Web development</p>
+                    </div>
+                    <p>I enjoy building on webs from scratch. I can build websites as per your needs.</p>
+                    <div class="web-icons">
+                        <div><i class="fa-brands fa-html5" id="skill"></i></div>
+                        <div><i class="fa-brands fa-js" id="skill"></i></div>
+                        <div><i class="fa-brands fa-css3-alt" id="skill"></i></div>
+                        <div><i class="fa-brands fa-java" id="skill"></i></div>
+                        <div><i class="fa-brands fa-python" id="skill"></i></div>
+                        <div><i class="fa-brands fa-react" id="skill"></i></div>
+                        <div><i class="fa-brands fa-php"></i></div>
+                    </div>
+                </div>
+                <div class="skills graphics">
+                    <div class="graphics-logo">
+                        <i class="fa-solid fa-pen-nib"></i>
+                        <p>Design</p>
+                    </div>
+                    <p>I can create appealing designs using photoshop, figma, illustrator.</p>
+                    <div class="graphics-icons">
+                        <div><i class="fa-brands fa-figma"></i></div>
+                        <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/640px-Adobe_Photoshop_CC_icon.svg.png" id="photoshop"></div>
+                        <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/800px-Adobe_Illustrator_CC_icon.svg.png" id="illustrator"></div>
+                        <div><img src="data:image/png;base64,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" id="canva"></div>
+                    </div>
+                </div>
+                <div class="skills blogging">
+                    <div class="blogging-logo">
+                        <i class="fa-solid fa-blog"></i>
+                        <p>Blogging</p>
+                    </div>
+                    <p>Blogging is a popular form of online communication where individuals share their thoughts, ideas and experiences. Blogging can be a fun and fulfilling way to express oneself.</p>
+                    <p>I am working on a blogging website for web development and few tech information.</p>
                 </div>
             </div>
         </div>
