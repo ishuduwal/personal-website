@@ -218,10 +218,14 @@ ul{
     position: absolute;
 }
 .home-text-container > h1{
-    font-size: 2.7rem;
+    font-size: 2rem;
     font-weight: 800;
-    margin-bottom: 1rem;
     animation: opacity 2s ease-in-out;
+    line-height: 2.5rem;
+}
+#large-text{
+    font-size: 2.7rem;
+    margin-bottom: 1rem;
 }
 @keyframes opacity{
     0%{
@@ -396,6 +400,7 @@ ul{
     background-color: #fff;
     border: 1px solid #673de6;
     padding: 1rem;
+    transition: 0.5s;
 }
 .skills:hover{
     transform: translateY(-0.3rem);
@@ -444,7 +449,7 @@ ul{
     place-items: center;
     margin-top: 1rem;
 }
-#photoshop, #illustrator, #canva{
+#photoshop, #illustrator, #canva, #tailwind{
     object-fit: cover;
     height: 2rem;
     width: 2rem;
