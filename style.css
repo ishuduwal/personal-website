@@ -683,6 +683,7 @@ ul{
     justify-content: center;
     align-items: center;
     display: flex;
+    color: var(--bg-primary);
 }
 .project > p{
     font-size: 2rem;
