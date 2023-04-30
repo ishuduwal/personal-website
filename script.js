@@ -24,3 +24,14 @@ function showPage(pageId){
     const page = document.getElementById(pageId);
     page.classList.add('active');
 }
+/*dark-mode*/
+const toggle_button = document.querySelector('#checkbox')
+console.log(toggle_button)
+toggle_button.addEventListener('change', () =>{
+    if(toggle_button.checked){
+        console.log("toggle_button checked")
+        document.body.classList.add('dark-mode')
+    }else{
+        document.body.classList.remove('dark-mode')
+    }
+    })
