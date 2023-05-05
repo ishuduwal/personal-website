@@ -34,4 +34,21 @@ toggle_button.addEventListener('change', () =>{
     }else{
         document.body.classList.remove('dark-mode')
     }
-    })
+})
+//image lazy loading
+const img = document.querySelector('#home-image');
+const options = {
+  rootMargin: '0px',
+  threshold: 0.1
+};
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      img.src = img.dataset.src;
+      img.classList.remove('loading');
+      observer.unobserve(img);
+    }
+  });
+}, options);
+observer.observe(img);
+img.classList.add('loading');

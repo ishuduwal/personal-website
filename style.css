@@ -269,6 +269,9 @@ ul{
     animation: about-img 7s ease-in-out infinite;
     cursor: pointer;
 }
+#home-image.loading {
+    background-color: #e2e4ec;
+}
 @keyframes about-img{
     0%{
         border-radius: 62% 38% 36% 64% / 60% 38% 62% 40%;
