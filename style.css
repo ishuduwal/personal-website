@@ -141,6 +141,7 @@ ul{
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    transition: 1.5s;
 }
 #nav-twitter{
     color: #1d9bf0;
