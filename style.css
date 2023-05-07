@@ -70,6 +70,10 @@ ul{
     height: 0.188rem;
     margin: 0.313rem auto;
     background-color: var(--bg-primary);
+    border-radius: 0.1rem;
+}
+.middle{
+    margin-left: 0.5rem;
 }
 .nav-socials{
     display: none;
@@ -205,7 +209,7 @@ ul{
     color: var(--bg-primary);
 }
 .home-text-container > h1{
-    line-height: 2.4rem;
+    line-height: 2.5rem;
     font-size: 1.3rem;
 }
 #large-text{
@@ -386,10 +390,10 @@ ul{
     transform: translateZ(-100px) rotateY(180deg);
 } 
 .right{
-    transform: rotateY(-90deg) translateZ(100px);
+    transform: rotateY(90deg) translateZ(100px);
 }  
 .left{
-    transform: rotateY(90deg) translateZ(100px);
+    transform: rotateY(-90deg) translateZ(100px);
 }  
 .top{
     transform: rotateX(90deg) translateZ(100px);
