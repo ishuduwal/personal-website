@@ -230,7 +230,7 @@ ul{
     font-size: 1.2rem;
     font-weight: bold;
 }
-#link-contact, #download-cv{
+#link-about, #download-cv{
     display: flex;
     width: 10rem;
     height: 2.5rem;
@@ -245,7 +245,7 @@ ul{
     transition: 1s;
     cursor: pointer;
 }
-#link-contact:hover, #download-cv:hover{
+#link-about:hover, #download-cv:hover{
     background-color: var(--bg-main);
     color: var(--bg-primary);
     border: 1px solid #673de6;
