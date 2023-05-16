@@ -230,7 +230,7 @@ ul{
     font-size: 1.2rem;
     font-weight: bold;
 }
-#link-about, #download-cv{
+#link-about, #download-cv, .submit{
     display: flex;
     width: 10rem;
     height: 2.5rem;
@@ -245,7 +245,7 @@ ul{
     transition: 1s;
     cursor: pointer;
 }
-#link-about:hover, #download-cv:hover{
+#link-about:hover, #download-cv:hover, .submit:hover{
     background-color: var(--bg-main);
     color: var(--bg-primary);
     border: 1px solid #673de6;
@@ -593,10 +593,36 @@ ul{
     display: flex;
     gap:20rem;
 }
-#contact-image{
-    height: 15rem;
-    width: 25rem;
-    object-fit: cover;
+form{
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+}
+input, textarea, label{
+    display: block;
+    color: var(--bg-primary);
+    width: 20rem;
+}
+label{
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+input, textarea{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid var(--bg-primary);
+    outline: none;
+    padding: 0.5rem 0.2rem;
+    font-size: 1rem;
+}
+input:focus, textarea:focus{
+    border-bottom: 2px solid #673de6;
+}
+.submit{
+    border: 0;
+}
+.submit:hover{
+    background-color: var(--bg-contact);
 }
 .contact-container-social > .contact-name{
     font-size: 1.3rem;
@@ -659,7 +685,7 @@ ul{
         gap:2rem;
     }
     .contact{
-        margin-top: 10rem;
+        margin-top: 15rem;
     }
     .contact-socials{
         justify-content: center;
@@ -679,6 +705,11 @@ ul{
     .contact-container-image{
         display: flex;
         justify-content: center;
+    }
+}
+@media (max-width:340px) {
+    input, textarea, label{
+        width: 100%;
     }
 }
 /*page-section*/

@@ -149,14 +149,23 @@
                     <a href="https://www.facebook.com/ishu.duwal.7" target="_blank" id="contact-facebook"><i class="fa-brands fa-facebook"></i></a>
                 </div>
             </div>
-            <div class="contact-container-image">
-                <img src="https://cutewallpaper.org/21/wallpaper-programmer/45+-Computer-Programmer-Wallpapers-Download-at-WallpaperBro.png" alt="pc" id="contact-image">
+            <div class="form">
+                <form action="mail.php" method="POST">
+                    <label>Name:</label>
+                    <input type="text" name="name" class="name">
+                    <label>E-mail:</label>
+                    <input type="email" name="email" class="email-address">
+                    <label>Subject:</label>
+                    <input type="text" name="subject" class="subject">
+                    <label>Message:</label>
+                    <textarea name="message" class="message"></textarea>
+                    <input type="submit" value="Send" class="submit">
+                </form>
             </div>
         </div>
     </div>
     <div class="footer">
         <p>© Copyright 2023</p>
-        <p>Made by Ishu Duwal</p>
     </div>
     </div>
         <div id="page-two" class="page">
