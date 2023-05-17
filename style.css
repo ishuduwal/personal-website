@@ -601,6 +601,7 @@ form{
 input, textarea, label{
     display: block;
     color: var(--bg-primary);
+    transition: 1.5s;
     width: 20rem;
 }
 label{
@@ -611,18 +612,29 @@ input, textarea{
     background-color: transparent;
     border: 0;
     border-bottom: 2px solid var(--bg-primary);
+    transition: 1.5s;
     outline: none;
     padding: 0.5rem 0.2rem;
     font-size: 1rem;
 }
 input:focus, textarea:focus{
     border-bottom: 2px solid #673de6;
+    transition: 0.5s;
+}
+textarea{
+    resize: none;
+}
+textarea::-webkit-scrollbar{
+    display: none;
 }
 .submit{
     border: 0;
 }
 .submit:hover{
     background-color: var(--bg-contact);
+}
+.contact-container-social{
+    margin-top: 5rem;
 }
 .contact-container-social > .contact-name{
     font-size: 1.3rem;
