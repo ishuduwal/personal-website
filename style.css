@@ -609,7 +609,7 @@ label{
     font-weight: bold;
 }
 input, textarea{
-    background-color: transparent;
+    background-color: var(--bg-contact);
     border: 0;
     border-bottom: 2px solid var(--bg-primary);
     transition: 1.5s;
