@@ -36,19 +36,16 @@ toggle_button.addEventListener('change', () =>{
     }
 })
 //image lazy loading
-const img = document.querySelector('#home-image');
-const options = {
-  rootMargin: '0px',
-  threshold: 0.1
-};
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      img.src = img.dataset.src;
-      img.classList.remove('loading');
-      observer.unobserve(img);
-    }
-  });
-}, options);
-observer.observe(img);
-img.classList.add('loading');
+const blurDivs = document.querySelectorAll(".home-image-container");
+blurDivs.forEach((div) => {
+  const img = div.querySelector("img");
+  function loaded() {
+    div.classList.add("loaded");
+  }
+  if (img.complete) {
+    loaded();
+  } else {
+    img.addEventListener("load", loaded);
+  }
+});
+
