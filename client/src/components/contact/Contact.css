@@ -1,0 +1,92 @@
+.contact{
+    padding-top: 4rem;
+    width: 100%;
+    background-color: var(--main-bg);
+    color: var(--text-color);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+    height: 100vh;
+    text-align: left;
+}
+.contact-container{
+    max-width: 52rem;
+    padding: 1rem;
+}
+.contact-container > div >p{
+    margin-bottom: 1rem;
+}
+.contact-header{
+    color: var(--purple-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.contact-box{
+    max-width: 30rem;
+}
+@media (max-width:600px) {
+    .inputBox > label {
+        margin-bottom: 1rem;
+      }
+    .error {
+        margin-top: 1.3rem;
+    }
+} 
+form > div{
+    display: grid;
+    margin-bottom: 1rem;
+}
+.error{
+    color: #0dbc5c;
+    font-size: 1rem;
+}
+input, textarea{
+    height: 2.5rem;
+    width: 100%;
+    border: 1px solid var(--text-color);
+    background-color: transparent;
+    outline: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    padding-left: 0.2rem;
+    margin-top: 0.5rem;
+}
+textarea{
+    height: 5rem;
+}
+.send-btn{
+    height: 2.5rem;
+    width: 8rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: var(--purple-color);
+    border: 1px solid var(--text-color);
+    transition: 0.3s;
+    cursor: pointer;
+    color: var(--text-color);
+}
+.send-btn:hover{
+    border: 1px solid var(--purple-color);
+    color: var(--text-color);
+    background-color: var(--main-bg);
+}
+.success-message{
+    position: absolute;
+    height: auto;
+    background-color: var(--main-bg);
+    width: auto;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: 25%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.btn-ok{
+    height: 1.2rem;
+    width: 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+}

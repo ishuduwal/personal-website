@@ -1,0 +1,110 @@
+/* navbar*/
+nav{
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    align-items: center;
+    background-color: var(--main-bg);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 12px 0;
+    justify-content: space-around;
+}
+nav > span{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+nav > ul{
+    display: flex;
+    gap: 3rem;
+}
+nav > ul >li{
+    list-style-type: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    position: relative;
+}
+li:after{
+    content: "";
+    position: absolute;
+    background-color: var(--purple-color);
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -4px;
+    transition: 0.5s;
+}
+li:hover:after{
+    width: 100%;
+}
+.fa-solid{
+    cursor: pointer;
+    color:var(--text-color);
+}
+#hamburger{
+    display: none;
+}
+.link{
+    color: var(--text-color);
+}
+@media (max-width:600px) {
+    nav > ul{
+        display: none;
+    }
+    #hamburger{
+        display: block;
+    }
+    #hamburger,
+    #close-button {
+        cursor: pointer;
+        font-size: 1.3rem;
+        position: absolute;
+        right: 1rem;
+    }
+    ul.menu.show {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 4rem;
+        right: 0;
+        background-color: var(--main-bg);
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+        color: var(--text-color);
+    }
+    span{
+        position: absolute;
+        left: 1rem;
+    }
+}
+/*home*/
+.home{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+    background-color: var(--main-bg);
+    padding-top: 4rem;
+}
+.introduction >.head-line{
+    font-size: 1.5rem;
+    color: #673de6;
+    font-weight: 700;
+}
+.introduction{
+    max-width: 52rem;
+    padding: 1rem;
+}
+.introduction > p{
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+.skill{
+    margin-bottom: 1rem;
+}
+.skill > p{
+    color: #0dbc5c;
+}

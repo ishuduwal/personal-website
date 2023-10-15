@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inconsolata,monospace;
+}
+.dark-theme{
+    --main-bg: #15202b;
+    --text-color: #fff;
+    --purple-color: #673de6;
+}
+.light-theme{
+    --main-bg: #f1f5f9;
+    --text-color: #000;
+    --purple-color: #673de6;
+}
